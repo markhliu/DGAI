@@ -1,11 +1,11 @@
-# DGAI
+# Demystify Generative AI
 
 “Technology advanced enough is indistinguishable from magic.”
 
 --Arthur C. Clarke (author of 2001: A Space Odyssey)
 
 
-## Demystify Generative AI: a simple introduction to generative AI for people without computer science background.
+## A simple introduction to generative AI for people without computer science background.
 
 A 16-chapter series to introduce generative AI on how to generate images, text, music, figures, patterns, and more. The series show how to:
 
