@@ -31,7 +31,10 @@ Two examples of encoding arithmetic:
 
 ## Chapter 15: MuseGAN
 Train a generative adversarial network (GAN) to produce music. here is a sample of the generated music:
-<audio src="https://gattonweb.uky.edu/faculty/lium/ml/MuseGAN_song.mp3" type="audio/mpeg" controls="" controlsList="nodownload"></audio>
+
+https://github.com/markhliu/DGAI/assets/50116107/58726105-51c8-44ed-bf1e-ff26d1d48fde
+
+
 
 
 
