@@ -29,3 +29,7 @@ Two examples of encoding arithmetic:
 
 <img src="https://gattonweb.uky.edu/faculty/lium/ml/vectorArithmetic2.png" />
 
+## Chapter 15: MuseGAN
+Train a generative adversarial network (GAN) to produce music. here is a sample of the generated music:
+
+<audio src="https://gattonweb.uky.edu/faculty/lium/ml/MuseGAN_song.mp3" type="audio/mpeg" controls="" controlsList="nodownload"></audio>
