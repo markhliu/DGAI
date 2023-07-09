@@ -45,6 +45,10 @@ and control attributes: here you can transition from red-hair to black-hair:
 ![attribute](https://github.com/markhliu/DGAI/assets/50116107/8e123398-111a-41c9-b9d2-5d977ec6a1a2)
 
 ## Chapter 7: Conditional GAN and Wasserstein GAN
+Use Wasserstein distance to stabilize training, plus add label to generate certain types of images. Faces without glasses over the course of training: 
+
+<img src="https://gattonweb.uky.edu/faculty/lium/ml/noglasses.gif" />
+
 ## Chapter 8: CycleGAN
 ## Chapter 9: Introduction to Variational Autoencoders
 ## Chapter 10: Attribute-Control in Variational Autoencoders
