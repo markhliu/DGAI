@@ -24,6 +24,10 @@ Most of the generative models in this book belong to a framework called Generati
 ![invertedU](https://github.com/markhliu/DGAI/assets/50116107/9da4fdab-d852-4f9e-b6bf-a184928d2885)
 
 ## Chapter 4: Pattern Generation with GANs
+You'll learn how to use GAN to generate a sequence of numbers with certain patterns. We'll try to generate multiples of five. But you can change the pattern to multiples of two, three, seven, or any number really. This is the output from a trained GAN:
+tensor([25,  0, 30, 40, 25, 35, 10, 30, 10,  0], device='cuda:0')
+All numbers are multiples of five!
+
 ## Chapter 5: Image Generation with GANS
 ## Chapter 6: High Resolution Image Generation with Deep Convolutional GANs
 ## Chapter 7: Conditional GAN and Wasserstein GAN
