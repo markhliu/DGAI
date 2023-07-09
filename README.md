@@ -37,6 +37,8 @@ Two examples of encoding arithmetic:
 <img src="https://gattonweb.uky.edu/faculty/lium/ml/vectorArithmetic1.png" />
 
 <img src="https://gattonweb.uky.edu/faculty/lium/ml/vectorArithmetic2.png" />
+
+
 ## Chapter 11: Text Generation with Character-Level LSTM
 ## Chapter 12: Text Generation with Word-Level LSTM
 ## Chapter 13: Create A GPT from Scratch
