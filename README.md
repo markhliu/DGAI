@@ -46,10 +46,12 @@ and control attributes: here you can transition from red-hair to black-hair:
 
 ## Chapter 7: Conditional GAN and Wasserstein GAN
 Use Wasserstein distance to stabilize training, plus add label to generate certain types of images. E.g., faces without glasses over the course of training: 
-
 https://gattonweb.uky.edu/faculty/lium/ml/noglasses.gif"
-
 ## Chapter 8: CycleGAN
+Convert horses to zebras:
+
+![Fz9kR4BakAEtZEU](https://github.com/markhliu/DGAI/assets/50116107/eb954b98-5fd5-45ae-81f1-03a8072efcd2)
+
 ## Chapter 9: Introduction to Variational Autoencoders
 ## Chapter 10: Attribute-Control in Variational Autoencoders
 Train a variational autoencoder (VAE) to generate color images of human faces. Control encodings to generate images with certain attributes: e.g., images that gradually transition from images with glasses to images without glasses. Take the encodings of men with glasses, minus encodings of men without glasses, and add in the encodings of women without glasses, you'll generate images of women with glasses. The whole experience seems like straight out of science fiction, hence the opening quote by the science fiction writer Arthur Clarke: “Technology advanced enough is indistinguishable from magic.” 
