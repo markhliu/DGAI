@@ -20,6 +20,9 @@ A 16-chapter series to create images, text, music, figures, and patterns in PyTo
 ## Chapter 1: Introduction to PyTorch
 ## Chapter 2: Deep Learning with PyTorch
 ## Chapter 3: Generative Adversarial Networks (GANs)
+Most of the generative models in this book belong to a framework called Generative Adversarial Networks (GANs). This chapter introduces you to the basic idea behind GANs and you'll learn to use the framework to generate data samples that form an inverted-U shape. At the end of this chapter, you'll be able to generate data to mimic any shape: sine, cosine, quadratic, and so on. 
+![invertedU](https://github.com/markhliu/DGAI/assets/50116107/9da4fdab-d852-4f9e-b6bf-a184928d2885)
+
 ## Chapter 4: Pattern Generation with GANs
 ## Chapter 5: Image Generation with GANS
 ## Chapter 6: High Resolution Image Generation with Deep Convolutional GANs
