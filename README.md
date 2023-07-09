@@ -32,9 +32,18 @@ All numbers are multiples of five!
 
 ## Chapter 5: Image Generation with GANS
 Generate image without using convolutional layers:
+
 ![imageGAN](https://github.com/markhliu/DGAI/assets/50116107/7aedad50-5393-4e91-8a23-1cc7409284ef)
 
 ## Chapter 6: High Resolution Image Generation with Deep Convolutional GANs
+Use deep convolutional GAN to generate color images:
+
+![anime](https://github.com/markhliu/DGAI/assets/50116107/273bda1e-3319-4009-9496-b17e382f0320)
+
+and control attributes: here you can transition from red-hair to black-hair:
+
+![attribute](https://github.com/markhliu/DGAI/assets/50116107/8e123398-111a-41c9-b9d2-5d977ec6a1a2)
+
 ## Chapter 7: Conditional GAN and Wasserstein GAN
 ## Chapter 8: CycleGAN
 ## Chapter 9: Introduction to Variational Autoencoders
