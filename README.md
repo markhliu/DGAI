@@ -25,7 +25,9 @@ Most of the generative models in this book belong to a framework called Generati
 
 ## Chapter 4: Pattern Generation with GANs
 You'll learn how to use GAN to generate a sequence of numbers with certain patterns. We'll try to generate multiples of five. But you can change the pattern to multiples of two, three, seven, or any number really. This is the output from a trained GAN:
+
 tensor([25,  0, 30, 40, 25, 35, 10, 30, 10,  0], device='cuda:0')
+
 All numbers are multiples of five!
 
 ## Chapter 5: Image Generation with GANS
