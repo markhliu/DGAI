@@ -31,6 +31,9 @@ tensor([25,  0, 30, 40, 25, 35, 10, 30, 10,  0], device='cuda:0')
 All numbers are multiples of five!
 
 ## Chapter 5: Image Generation with GANS
+Generate image without using convolutional layers:
+![imageGAN](https://github.com/markhliu/DGAI/assets/50116107/7aedad50-5393-4e91-8a23-1cc7409284ef)
+
 ## Chapter 6: High Resolution Image Generation with Deep Convolutional GANs
 ## Chapter 7: Conditional GAN and Wasserstein GAN
 ## Chapter 8: CycleGAN
