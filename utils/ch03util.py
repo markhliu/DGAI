@@ -41,9 +41,12 @@ def gen_sequence():
     values = torch.tensor(indices)*5
     return values  
 
+import numpy as np
+
 def gen_batch():
-    sequence=gen_sequence()
-    batch=[int_to_onehots(i).numpy() for i in sequence]
+    sequence=gen_sequence()    #A
+    batch=[int_to_onehots(i).numpy() for i in sequence]    #B
+    batch=np.array(batch)
     return torch.tensor(batch)
 
 
