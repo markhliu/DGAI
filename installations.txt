@@ -1,0 +1,24 @@
+# Install Python and set up a virtual environment first
+# Follow the instructions in the Appendix to install Anaconda
+
+# Create a virtual environment and install Jupyter Notebook
+conda create -n dgai
+conda activate dgai
+conda install notebook
+# Use Jupyter Notebook
+jupyter notebook
+
+# Follow the instructions in the Appendix to install PyTorch
+# first figure out if your computer has a CUDA-enabled GPU
+# if yes, figure out CUDA version (mine is 11.8, change if needed)
+conda install pytorch torchvision torchaudio pytorch-cuda=11.8 -c pytorch -c nvidia
+# if no CUDA-enabled GPU, use this:
+conda install pytorch torchvision torchaudio cpuonly -c pytorch
+
+# Chapter 2
+pip install matplotlib
+
+# Chapter 5:
+pip install pandas
+pip install Pillow
+
