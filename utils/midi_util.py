@@ -1,3 +1,5 @@
+# This file is adapted from Azamat Kanametov's GitHub repository
+# https://github.com/akanametov/musegan/blob/dev/data/utils.py
 import torch
 from torch.utils.data import Dataset
 import numpy as np

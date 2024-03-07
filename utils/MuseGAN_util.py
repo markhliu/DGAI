@@ -1,3 +1,5 @@
+# This file is adapted from Azamat Kanametov's GitHub repository
+# https://github.com/akanametov/musegan
 import torch
 import torch.nn as nn
 
