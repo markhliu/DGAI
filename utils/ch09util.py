@@ -10,11 +10,10 @@ def subsequent_mask(size):
     output = torch.from_numpy(subsequent_mask) == 0
     return output
 
-from torch.autograd import Variable
+
 def make_std_mask(tgt, pad):
-    tgt_mask = (tgt != pad).unsqueeze(-2)
-    output = tgt_mask & Variable(
-        subsequent_mask(tgt.size(-1)).type_as(tgt_mask.data))
+    tgt_mask=(tgt != pad).unsqueeze(-2)
+    output=tgt_mask & subsequent_mask(tgt.size(-1)).type_as(tgt_mask.data)
     return output 
 
 # define the Batch class
@@ -144,8 +143,8 @@ class DecoderLayer(nn.Module):
 
 
 # create the model
-def create_model(src_vocab, tgt_vocab, N=6, d_model=256,
-                 d_ff=1024, h=8, dropout=0.1):
+def create_model(src_vocab, tgt_vocab, N, d_model,
+                 d_ff, h, dropout=0.1):
     attn=MultiHeadedAttention(h, d_model).to(DEVICE)
     ff=PositionwiseFeedForward(d_model, d_ff, dropout).to(DEVICE)
     pos=PositionalEncoding(d_model, dropout).to(DEVICE)
@@ -195,8 +194,7 @@ class PositionalEncoding(nn.Module):
         self.register_buffer('pe', pe)  
 
     def forward(self, x):
-        x = x + Variable(self.pe[:, :x.size(1)],
-                         requires_grad=False)
+        x = x + self.pe[:, :x.size(1)].requires_grad_(False)
         out = self.dropout(x)
         return out
 
@@ -263,7 +261,7 @@ class PositionwiseFeedForward(nn.Module):
 
 
 class LabelSmoothing(nn.Module):
-    def __init__(self, size, padding_idx, smoothing=0.0):
+    def __init__(self, size, padding_idx, smoothing=0.1):
         super().__init__()
         self.criterion = nn.KLDivLoss(reduction='sum')  
         self.padding_idx = padding_idx
@@ -283,8 +281,7 @@ class LabelSmoothing(nn.Module):
         if mask.dim() > 0:
             true_dist.index_fill_(0, mask.squeeze(), 0.0)
         self.true_dist = true_dist
-        output = self.criterion(x, Variable(true_dist,
-                            requires_grad=False))
+        output = self.criterion(x, true_dist.clone().detach())
         return output
 
 class SimpleLossCompute:
@@ -326,8 +323,6 @@ class NoamOpt:
         output = self.factor * (self.model_size ** (-0.5) *
         min(step ** (-0.5), step * self.warmup ** (-1.5)))
         return output
-
-
 
 
 
