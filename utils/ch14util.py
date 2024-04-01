@@ -1,4 +1,5 @@
-# my_utils.py
+# adapted from Hugging Face's GitHub repo https://github.com/huggingface/diffusers
+# and Filip Basara's GitHub repo https://github.com/filipbasara0/simple-diffusion
 import os
 from PIL import Image
 import torch

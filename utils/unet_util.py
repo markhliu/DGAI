@@ -1,4 +1,5 @@
-# adapted from Filip Basara's GitHub repo https://github.com/filipbasara0/simple-diffusion
+# adapted from Hugging Face's GitHub repo https://github.com/huggingface/diffusers
+# and Filip Basara's GitHub repo https://github.com/filipbasara0/simple-diffusion
 import math
 import torch
 from torch import nn
