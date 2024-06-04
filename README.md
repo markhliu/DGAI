@@ -1,6 +1,6 @@
 <div >
 
-<img src="https://gattonweb.uky.edu/faculty/lium/dgai.jpeg" width="463" height="678">
+<img src="https://gattonweb.uky.edu/faculty/lium/dgai.jpeg" width="463" height="600">
 
 </div>
 
