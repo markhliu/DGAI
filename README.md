@@ -1,103 +1,53 @@
-# Demystify Generative AI
+# Learn Generative AI with PyTorch
 
 “Technology advanced enough is indistinguishable from magic.”
 
 --Arthur C. Clarke (author of 2001: A Space Odyssey)
 
 
-## text, music, image, figure, and pattern generation in PyTorch
+## About this Book
 
-A 17-chapter series to create images, text, music, figures, and patterns in PyTorch. The series show how to:
+Learn Generative AI with PyTorch aims to guide you through the creation of various content (shapes, numbers, images, text, and music) from scratch. It begins with simple models, helping readers build foundational deep learning skills before advancing to more complex challenges. All generative models in this book are deep neural networks. The book starts with a comprehensive deep learning project in PyTorch, ideal for those new to the field. Each chapter is carefully structured to build upon the previous one. You'll first create basic content like shapes, numbers, and images using Generative Adversarial Networks (GANs) with straightforward architectures. As you progress, the complexity increases, culminating in building state-of-the-art models like Transformers and Diffusion Models. 
 
-* Create a ChatGPT-style large language model from scratch to generate text that can pass as human-written
-* Generate images that are indistinguishable from real photos
-* Compose music that anyone would think it’s real
-* Create patterns such as a sequence of odd numbers, multiples of five, ...
-* Generate data that mimic certain shapes: sine curve, cosine shape, hyperbola graph
-* Control the latent space to generate images with certain attributes: men with glasses, women with glasses, transitioning gradually from men with glasses to men without glasses, or from women without glases to women with glasses...
-* Style transfer: convert a horse image to a zebra... 
+## Intended audience
 
-## Chapter 1: Introduction to PyTorch
-## Chapter 2: Deep Learning with PyTorch
-## Chapter 3: Generative Adversarial Networks (GANs)
-Most of the generative models in this book belong to a framework called Generative Adversarial Networks (GANs). This chapter introduces you to the basic idea behind GANs and you'll learn to use the framework to generate data samples that form an inverted-U shape. At the end of this chapter, you'll be able to generate data to mimic any shape: sine, cosine, quadratic, and so on. 
-![invertedU](https://github.com/markhliu/DGAI/assets/50116107/9da4fdab-d852-4f9e-b6bf-a184928d2885)
+Learn Generative AI with PyTorch is designed for machine learning enthusiasts and data scientists in various business fields who possess intermediate Python programming skills. This book aims to teach generative AI techniques for creating novel and innovative content, such as images, text, patterns, numbers, shapes, and audio, to enhance both their employers' businesses and their own careers. While many free learning materials are available online covering individual topics, this book consolidates everything into a clear, easy-to-follow, and up-to-date format, making it an invaluable resource for anyone aspiring to become an expert in generative AI.
 
-## Chapter 4: Pattern Generation with GANs
-You'll learn how to use GAN to generate a sequence of numbers with certain patterns. We'll try to generate multiples of five. But you can change the pattern to multiples of two, three, seven, or any number really. This is the output from a trained GAN:
+## How the book is organized
 
-tensor([25,  0, 30, 40, 25, 35, 10, 30, 10,  0], device='cuda:0')
+The book has 16 chapters, organized into four parts.
 
-All numbers are multiples of five!
+Part I introduces you to generative AI and deep learning with PyTorch.
 
-## Chapter 5: Image Generation with GANS
-Generate image without using convolutional layers:
+•	Chapter 1 explains what generative AI is and the rationale behind selecting PyTorch over other AI frameworks like TensorFlow for building generative models in this book.
+•	Chapter 2 uses PyTorch to create deep neural networks to perform binary and multi-category classifications so that you become well-versed in deep learning and classification tasks. The intention is to get you ready for the upcoming chapters, where you use deep neural networks in PyTorch to create various generative models.
+•	Chapter 3 introduces you to Generative Adversarial Networks (GANs). You learn to use GANs to generate shapes and sequences of numbers with certain patterns.
 
-![imageGAN](https://github.com/markhliu/DGAI/assets/50116107/7aedad50-5393-4e91-8a23-1cc7409284ef)
+Part II covers image generation. 
 
-## Chapter 6: High Resolution Image Generation with Deep Convolutional GANs
-Use deep convolutional GAN to generate color images:
+•	Chapter 4 discusses how to build and train GANs to generate high-resolution color images. In particular, you’ll learn to use convolutional neural networks (CNNs) to capture spatial features in images. You’ll also learn to use transposed convolutional layers to upsample and generate high-resolution feature maps in images. 
+•	Chapter 5 details two ways to select characteristics in generated images. The first method involves selecting specific vectors in the latent space. The second method uses a conditional GAN, where you build and train a GAN with labeled data. 
+•	Chapter 6 teaches you how to use a CycleGAN to translate images between two domains such as images with black hair and images with blond hair, or horse images and zebra images. 
+•	Chapter 7 explains how to generate high-resolution images using another generative model: autoencoders (AEs) and their variant, variational autoencoders (VAEs). 
 
-![anime](https://github.com/markhliu/DGAI/assets/50116107/273bda1e-3319-4009-9496-b17e382f0320)
+Part III dives into natural language processing (NLP) and text generation.
 
-and control attributes: here you can transition from red-hair to black-hair:
+•	Chapter 8 discusses text generation with a recurrent neural network (RNN). Along the way, you learn how tokenization and word embedding work. You’ll also learn to generate text autoregressively with the trained model and how to use temperature and top-K sampling to control the creativity of the generated text. 
+•	Chapter 9 builds a Transformer from scratch, based on the paper Attention Is All You Need, to translate between any two languages. You’ll implement line by line the multi-head attention mechanism and an encoder-decoder Transformer. 
+•	Chapter 10 trains the Transformer you built in Chapter 9 with over 47,000 pairs of English-to-French translations. You’ll learn to translate common English phrases to French with the trained model. 
+•	Chapter 11 builds GPT-2XL, the largest version of GPT-2, from scratch. After that, you’ll learn how to extract the pre-trained weights from Hugging Face and load them to your own GPT-2 model to generate text. 
+•	Chapter 12 constructs a scaled-down version of the GPT model with approximately five million parameters so that you can train it on a regular computer. You’ll use three novels by Ernest Hemingway as the training data. The trained model can generate text in Hemingway style. 
 
-![attribute](https://github.com/markhliu/DGAI/assets/50116107/8e123398-111a-41c9-b9d2-5d977ec6a1a2)
+Part IV discusses some practical applications of the generative models in the book and the most recent developments in the field of generative AI.
 
-## Chapter 7: Conditional GAN and Wasserstein GAN
-Use Wasserstein distance to stabilize training, plus add label to generate certain types of images. E.g., faces without glasses over the course of training: 
-https://gattonweb.uky.edu/faculty/lium/ml/noglasses.gif"
-## Chapter 8: CycleGAN
-Convert horses to zebras:
+•	Chapter 13 builds and trains a MuseGAN to generate music. MuseGAN treats a piece of music as a multi-dimensional object akin to an image. The generator produces a complete piece of music and submits it to the critic for evaluation. The generator then modifies the music based on the critic's feedback until it closely resembles real music from the training dataset. 
+•	Chapter 14 takes a different approach to AI music creation. Instead of treating a piece of music as a multi-dimensional object, you treat it as a sequence of musical events. You'll then apply techniques from text generation to predict the next element in a sequence. 
+•	Chapter 15 introduces you to diffusion models, which form the foundation of all leading text-to-image Transformers (such as DALL-E or Imagen). You’ll build and train a diffusion model to generate high-resolution flower images.
+•	Chapter 16 ends the book with a project in which you use the LangChain library to combine pre-trained large language models (LLMs) with Wolfram Alpha and Wikipedia APIs to create a zero-shot know-it-all personal assistant.
 
-![Fz9kR4BakAEtZEU](https://github.com/markhliu/DGAI/assets/50116107/eb954b98-5fd5-45ae-81f1-03a8072efcd2)
+The appendix discusses how to install PyTorch on your computer, with or without a Compute Unified Device Architecture (CUDA)-enabled GPU.
 
-## Chapter 9: Introduction to Variational Autoencoders
-## Chapter 10: Attribute-Control in Variational Autoencoders
-Train a variational autoencoder (VAE) to generate color images of human faces. Control encodings to generate images with certain attributes: e.g., images that gradually transition from images with glasses to images without glasses. Take the encodings of men with glasses, minus encodings of men without glasses, and add in the encodings of women without glasses, you'll generate images of women with glasses. The whole experience seems like straight out of science fiction, hence the opening quote by the science fiction writer Arthur Clarke: “Technology advanced enough is indistinguishable from magic.” 
-
-To give you an idea what the chapter will accomplish, here is the transition from women with glasses to women without glasses:
-<img src="https://gattonweb.uky.edu/faculty/lium/ml/wgwng6.png" />
-Transition from women without glasses to men without glasses
-<img src="https://gattonweb.uky.edu/faculty/lium/ml/wngmng6.png" />
-Two examples of encoding arithmetic:
-<img src="https://gattonweb.uky.edu/faculty/lium/ml/vectorArithmetic1.png" />
-
-<img src="https://gattonweb.uky.edu/faculty/lium/ml/vectorArithmetic2.png" />
-
-
-## Chapter 11: Text Generation with Character-Level LSTM
-## Chapter 12: Text Generation with Word-Level LSTM
-## Chapter 13: A Line-by-Line Implementation of Attention and Transformer
-## Chapter 14: Create A GPT from Scratch
-Below is the text generated by  the model with prompt "The city of Lexington in the state of Kentucky":
-
-The city of Lexington in the state of Kentucky, is also offering a $300 award to "Owner" PANZER-KATZ FOR BEST LENGTH OF STREET CARS, or just "For the Best Street Car" in any of their three categories:
-
-4WD (3.5 miles or less)
-
-6WD (3.5 miles or more)
-
-FWD (3.5 miles or more)
-
-And this is for the BEST street car in the 4WD category:
-
-The "Neato" (pronounced "Nice")
-
-What is it with those 4WD cars and their "Neato" names? This is probably one of the most well-know 4WD names in the history of 4WD cars. It is so well known that there are a multitude of books dedicated to the design and specifications of "Nice" 4WD cars, such as this one from Michael B. Smith, which is a good read.
-
-But as of right
-
-
-## Chapter 15: Train a ChatGPT style Transformer
-## Chapter 16: MuseGAN
-Train a generative adversarial network (GAN) to produce music. here is a sample of the generated music:
-https://gattonweb.uky.edu/faculty/lium/ml/MuseGAN_song.mp3
-
-## Chapter 17: Music Transformer
-Train a ChatGPT-style transformer to generate music. here is a sample of the generated music:
-https://gattonweb.uky.edu/faculty/lium/ml/musicTrans.mp3
-
+All Python programs in this book are available for download at the book’s GitHub repository https://github.com/markhliu/DGAI. The programs are organized by chapters with each chapter in a single Jupyter Notebook file. See the Appendix of the book on how to install Python, PyTorch, and Jupyter Notebook on your computer. 
 
 
 
