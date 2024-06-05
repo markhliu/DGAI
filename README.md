@@ -71,6 +71,7 @@ https://gattonweb.uky.edu/faculty/lium/ml/MuseGAN_song.mp3
 https://gattonweb.uky.edu/faculty/lium/ml/musicTrans.mp3
 
 •	Chapter 15 introduces you to diffusion models, which form the foundation of all leading text-to-image Transformers (such as DALL-E or Imagen). You’ll build and train a diffusion model to generate high-resolution flower images.
+<div ><img src="https://gattonweb.uky.edu/faculty/lium/img/diffu.png" width="703" height="593"></div>
 
 •	Chapter 16 ends the book with a project in which you use the LangChain library to combine pre-trained large language models (LLMs) with Wolfram Alpha and Wikipedia APIs to create a zero-shot know-it-all personal assistant.
 
