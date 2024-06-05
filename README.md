@@ -47,6 +47,7 @@ Part II covers image generation.
 <div ><img src="https://gattonweb.uky.edu/faculty/lium/img/cycle.png" width="785" height="514"></div>
 
 •	Chapter 7 explains how to generate high-resolution images using another generative model: autoencoders (AEs) and their variant, variational autoencoders (VAEs). 
+<div ><img src="https://gattonweb.uky.edu/faculty/lium/img/vae.png" width="728" height="147"></div>
 
 Part III dives into natural language processing (NLP) and text generation.
 
