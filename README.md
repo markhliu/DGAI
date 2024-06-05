@@ -54,6 +54,7 @@ Part III dives into natural language processing (NLP) and text generation.
 •	Chapter 8 discusses text generation with a recurrent neural network (RNN). Along the way, you learn how tokenization and word embedding work. You’ll also learn to generate text autoregressively with the trained model and how to use temperature and top-K sampling to control the creativity of the generated text. 
 
 •	Chapter 9 builds a Transformer from scratch, based on the paper Attention Is All You Need, to translate between any two languages. You’ll implement line by line the multi-head attention mechanism and an encoder-decoder Transformer. 
+<div ><img src="https://gattonweb.uky.edu/faculty/lium/img/trans.png" width="527" height="505"></div>
 
 •	Chapter 10 trains the Transformer you built in Chapter 9 with over 47,000 pairs of English-to-French translations. You’ll learn to translate common English phrases to French with the trained model. 
 
