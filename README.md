@@ -40,6 +40,8 @@ Part II covers image generation.
 
 •	Chapter 5 details two ways to select characteristics in generated images. The first method involves selecting specific vectors in the latent space. The second method uses a conditional GAN, where you build and train a GAN with labeled data. 
 
+<div ><img src="https://gattonweb.uky.edu/faculty/lium/img/cgan.png" width="776" height="780"></div>
+
 •	Chapter 6 teaches you how to use a CycleGAN to translate images between two domains such as images with black hair and images with blond hair, or horse images and zebra images. 
 
 •	Chapter 7 explains how to generate high-resolution images using another generative model: autoencoders (AEs) and their variant, variational autoencoders (VAEs). 
