@@ -67,11 +67,8 @@ Part IV discusses some practical applications of the generative models in the bo
 •	Chapter 13 builds and trains a MuseGAN to generate music. MuseGAN treats a piece of music as a multi-dimensional object akin to an image. The generator produces a complete piece of music and submits it to the critic for evaluation. The generator then modifies the music based on the critic's feedback until it closely resembles real music from the training dataset. Listen to an example of the generated music: 
 https://gattonweb.uky.edu/faculty/lium/ml/MuseGAN_song.mp3
 
-<audio controls>  <source src="https://gattonweb.uky.edu/faculty/lium/ml/MuseGAN_song.mp3"> here </audio>
-
-
-
-•	Chapter 14 takes a different approach to AI music creation. Instead of treating a piece of music as a multi-dimensional object, you treat it as a sequence of musical events. You'll then apply techniques from text generation to predict the next element in a sequence. 
+•	Chapter 14 takes a different approach to AI music creation. Instead of treating a piece of music as a multi-dimensional object, you treat it as a sequence of musical events. You'll then apply techniques from text generation to predict the next element in a sequence. Listen to an example of the generated music: 
+https://gattonweb.uky.edu/faculty/lium/ml/musicTrans.mp3
 
 •	Chapter 15 introduces you to diffusion models, which form the foundation of all leading text-to-image Transformers (such as DALL-E or Imagen). You’ll build and train a diffusion model to generate high-resolution flower images.
 
