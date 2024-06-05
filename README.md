@@ -32,6 +32,8 @@ Part I introduces you to generative AI and deep learning with PyTorch.
 
 •	Chapter 3 introduces you to Generative Adversarial Networks (GANs). You learn to use GANs to generate shapes and sequences of numbers with certain patterns.
 
+<div ><img src="https://gattonweb.uky.edu/faculty/lium/img/gan.png" width="249" height="115"></div>
+
 Part II covers image generation. 
 
 •	Chapter 4 discusses how to build and train GANs to generate high-resolution color images. In particular, you’ll learn to use convolutional neural networks (CNNs) to capture spatial features in images. You’ll also learn to use transposed convolutional layers to upsample and generate high-resolution feature maps in images. 
