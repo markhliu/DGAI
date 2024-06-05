@@ -44,7 +44,7 @@ Part II covers image generation.
 
 •	Chapter 6 teaches you how to use a CycleGAN to translate images between two domains such as images with black hair and images with blond hair, or horse images and zebra images. 
 
-<div ><img src="https://gattonweb.uky.edu/faculty/lium/img/cycle.png" width="514" height="785"></div>
+<div ><img src="https://gattonweb.uky.edu/faculty/lium/img/cycle.png" width="785" height="514"></div>
 
 •	Chapter 7 explains how to generate high-resolution images using another generative model: autoencoders (AEs) and their variant, variational autoencoders (VAEs). 
 
