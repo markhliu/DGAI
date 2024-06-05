@@ -64,7 +64,8 @@ Part III dives into natural language processing (NLP) and text generation.
 
 Part IV discusses some practical applications of the generative models in the book and the most recent developments in the field of generative AI.
 
-•	Chapter 13 builds and trains a MuseGAN to generate music. MuseGAN treats a piece of music as a multi-dimensional object akin to an image. The generator produces a complete piece of music and submits it to the critic for evaluation. The generator then modifies the music based on the critic's feedback until it closely resembles real music from the training dataset. 
+•	Chapter 13 builds and trains a MuseGAN to generate music. MuseGAN treats a piece of music as a multi-dimensional object akin to an image. The generator produces a complete piece of music and submits it to the critic for evaluation. The generator then modifies the music based on the critic's feedback until it closely resembles real music from the training dataset. Listen to an example of the generated music: 
+<audio controls>  <source src="[horse.mp3](https://gattonweb.uky.edu/faculty/lium/ml/MuseGAN_song.mp3)" type="audio/mpeg"> here </audio>
 
 •	Chapter 14 takes a different approach to AI music creation. Instead of treating a piece of music as a multi-dimensional object, you treat it as a sequence of musical events. You'll then apply techniques from text generation to predict the next element in a sequence. 
 
