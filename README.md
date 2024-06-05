@@ -32,7 +32,7 @@ Part I introduces you to generative AI and deep learning with PyTorch.
 
 •	Chapter 3 introduces you to Generative Adversarial Networks (GANs). You learn to use GANs to generate shapes and sequences of numbers with certain patterns.
 
-<div ><img src="https://gattonweb.uky.edu/faculty/lium/img/gan.png" width="249" height="115"></div>
+<div ><img src="https://gattonweb.uky.edu/faculty/lium/img/gan.png" width="500" height="230"></div>
 
 Part II covers image generation. 
 
