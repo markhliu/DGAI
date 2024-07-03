@@ -20,10 +20,10 @@ def make_std_mask(tgt, pad):
 class Batch:
     def __init__(self, src, trg=None, pad=0):
         src = torch.from_numpy(src).to(DEVICE).long()
-        trg = torch.from_numpy(trg).to(DEVICE).long()
         self.src = src
         self.src_mask = (src != pad).unsqueeze(-2)
         if trg is not None:
+            trg = torch.from_numpy(trg).to(DEVICE).long()
             self.trg = trg[:, :-1]
             self.trg_y = trg[:, 1:]
             self.trg_mask = make_std_mask(self.trg, pad)
