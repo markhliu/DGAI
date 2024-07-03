@@ -22,3 +22,29 @@ pip install matplotlib
 pip install pandas
 pip install Pillow
 
+
+# Chapter 6
+pip install albumentations
+
+
+# Chapter 10
+pip install transformers
+
+
+# Chapter 13
+pip install music21
+
+
+# Chapter 14
+pip install pretty_midi
+
+
+# Chapter 15
+pip install datasets einops diffusers openai
+
+# Chapter 16
+pip install --upgrade openai langchain_openai langchain
+pip install wolframalpha langchainhub
+pip install --upgrade --quiet wikipedia
+
+
