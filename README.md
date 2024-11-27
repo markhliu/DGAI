@@ -11,6 +11,7 @@
 
 --Arthur C. Clarke (author of 2001: A Space Odyssey)
 
+## The link to the book's pretrained models may not work. Download all pretained models at Manning website https://www.manning.com/books/learn-generative-ai-with-pytorch?ar=true&lpse=A&ar=true&lpse=A
 
 ## About this Book
 
